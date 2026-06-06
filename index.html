@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Convertor</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class = "container">
+            <form>
+                <h2>Currency Convertor</h2>
+                <div class="input-section">
+                    <p>Enter Amount</p>
+                    <input type = "number" value = "100">
+                    <p id = "para">Amount should be greater than or equal to 1</p>
+                </div>
+
+                <div class="select-section">
+                    <div class = "from">
+                        <p>From</p>
+                        <div id = "img-box">
+                            <img src = "https://flagsapi.com/IN/flat/64.png">
+                            <select name = "from"></select>
+                        </div>
+                    </div>
+                    <p><i class = "fa-solid fa-arrow-right-arrow-left"></i></p>
+                    <div class = "to">
+                        <p>To</p>
+                        <div id = "img-box">
+                            <img src = "https://flagsapi.com/US/flat/64.png">
+                            <select name = "to"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversion">
+                    <p></p>
+                </div>
+
+                <div class="btn">
+                    <button>Get Exchange Rate</button>
+                </div>
+            </form>
+        </div>
+        <script src = "currencyCodes.js"></script>
+        <script src = "script.js"></script>
+    </body>
+</html>
